@@ -95,6 +95,21 @@ a {
     color: var(--secondary-color);
 }
 
+/* 세종 부동산 NOW 전용 스타일 */
+.nav-now a {
+    font-weight: 800;
+    font-size: 1.15rem; /* 살짝 크게 */
+    color: var(--secondary-color) !important;
+    text-shadow: 1px 1px 0px #fff, 2px 2px 2px rgba(0,0,0,0.15); /* 입체적인 느낌 */
+    transition: all 0.3s ease;
+}
+
+.nav-now a:hover {
+    transform: scale(1.05); /* 살짝 커지는 효과 */
+    text-shadow: 1px 1px 0px #fff, 3px 3px 5px rgba(0,0,0,0.25);
+}
+
+
 /* 히어로 섹션 (첫 화면) */
 .hero-section {
     height: 100vh;
