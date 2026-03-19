@@ -1,0 +1,376 @@
+/* 
+    설명: 신뢰감과 자신감을 주는 네이비/블루 계열 색상을 사용하였습니다. 
+    가독성을 최우선으로 하고 공공기관 및 법률 전문가 특유의 단정함을 강조합니다.
+*/
+
+:root {
+    /* 색상 팔레트: 신뢰(Trust) & 권위(Authority)를 나타내는 네이비와 깔끔한 화이트/그레이 */
+    --primary-color: #1a365d;       /* 짙은 네이비 (메인 색상) */
+    --secondary-color: #2b6cb0;     /* 밝은 네이비 (서브 색상) */
+    --accent-color: #d97706;        /* 골드/오렌지빛 (포인트 색상) */
+    --bg-white: #ffffff;            /* 기본 배경색 (라이트모드) */
+    --bg-light: #f8fafc;            /* 서브 배경색 (구분용 옅은 회색) */
+    --text-main: #1e293b;           /* 기본 글자색 (완전 검정보다 부드러워 가독성이 좋음) */
+    --text-muted: #64748b;          /* 보조 글자색 */
+    --border-color: #e2e8f0;        /* 선 색상 */
+}
+
+/* 기본 설정 (Reset & Base) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; /* 부드러운 스크롤 */
+}
+
+body {
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+    color: var(--text-main);
+    background-color: var(--bg-white);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+a {
+    text-decoration: none;
+    color: inherit; /* 링크의 기본 파란색을 없앱니다. */
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+.bg-light {
+    background-color: var(--bg-light);
+}
+
+/* 네비게이션 바 */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none; /* 목록 기호(점) 제거 */
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    font-weight: 500;
+    color: var(--text-main);
+    transition: color 0.3s; /* 호버 시 색상 전환을 부드럽게 */
+}
+
+.nav-links a:hover {
+    color: var(--secondary-color);
+}
+
+/* 히어로 섹션 (첫 화면) */
+.hero-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(rgba(248, 250, 252, 0.85), rgba(255, 255, 255, 0.95)), url('bg.png') center/cover no-repeat;
+    padding: 0 20px;
+}
+
+.badge {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.hero-title {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.hero-title strong {
+    color: var(--secondary-color);
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px); /* 호버 시 살짝 위로 뜹니다. */
+    color: white;
+}
+
+/* 섹션 공통 제목 */
+.section-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background-color: var(--secondary-color);
+    border-radius: 2px;
+}
+
+/* 자기소개 섹션 */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    font-size: 1.05rem;
+}
+
+.contact-info {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.about-highlight {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.highlight-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05); /* 카드 그림자 효과 */
+    border-left: 5px solid var(--secondary-color);
+}
+
+.highlight-card .icon-large {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+}
+
+.highlight-card h4 {
+    margin-bottom: 5px;
+}
+
+/* 타임라인 섹션 */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 20px;
+    height: 100%;
+    width: 2px;
+    background-color: var(--border-color);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+    padding-left: 60px;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: 14px;
+    top: 5px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    box-shadow: 0 0 0 4px rgba(43, 108, 176, 0.2);
+}
+
+.timeline-date {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--accent-color);
+    margin-bottom: 5px;
+}
+
+.timeline-content h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.timeline-content p {
+    color: var(--text-muted);
+}
+
+/* 관심분야 섹션 */
+.interests-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.interest-card {
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.interest-card:hover {
+    transform: translateY(-5px); /* 호버 시 카드 들림 효과 */
+}
+
+.icon-circle {
+    width: 60px;
+    height: 60px;
+    background-color: var(--bg-light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.interest-card h4 {
+    margin-bottom: 10px;
+}
+
+.interest-card p {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+}
+
+.accent-card {
+    border: 2px solid var(--accent-color);
+}
+
+.accent-card .icon-circle {
+    background-color: rgba(217, 119, 6, 0.1);
+    color: var(--accent-color);
+}
+
+/* 푸터 */
+.footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.footer a {
+    color: var(--secondary-color);
+    text-decoration: underline; /* 푸터에 있는 이메일은 밑줄이 보이도록 설정 */
+}
+
+/* 애니메이션 효과 */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* 아래에서 위로 나타나는 효과 */
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 반응형 모바일 대응 */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* 모바일 기기에서는 상단 메뉴 생략 (깔끔하게) */
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .about-grid {
+        grid-template-columns: 1fr; /* 화면이 작아지면 한 줄로 배치 */
+    }
+    
+    .timeline::before {
+        left: 15px;
+    }
+    
+    .timeline-item {
+        padding-left: 45px;
+    }
+    
+    .timeline-dot {
+        left: 9px;
+    }
+}
