@@ -95,41 +95,26 @@ a {
     color: var(--secondary-color);
 }
 
-/* 세종 부동산 NOW 전용 스타일 */
-.nav-now a {
+/* 세종 부동산 NOW & 부동산피해방지 Tip 공통 스타일 */
+.nav-now a, .nav-tip a {
     font-weight: 800;
     font-size: 1.15rem; /* 살짝 크게 */
     color: var(--secondary-color) !important;
     text-shadow: 1px 1px 0px #fff, 2px 2px 2px rgba(0,0,0,0.15); /* 입체적인 느낌 */
     transition: all 0.3s ease;
+    display: inline-block;
 }
 
-.nav-now a:hover {
+.nav-now a:hover, .nav-tip a:hover {
     transform: scale(1.05); /* 살짝 커지는 효과 */
     text-shadow: 1px 1px 0px #fff, 3px 3px 5px rgba(0,0,0,0.25);
+    opacity: 1;
 }
 
-/* 부동산피해방지 Tip 전용 스타일 */
+/* 기존 기울임 관련 설정 제거 */
 .nav-tip {
     display: inline-block;
     margin-left: 10px;
-}
-
-.nav-tip a {
-    font-weight: 800; /* 'NOW'와 동일하게 두껍게 */
-    font-size: 1.15rem; /* 'NOW'와 동일한 크기 */
-    color: var(--text-main) !important; /* 기본 네비게이션 컬러 */
-    transition: all 0.2s ease;
-    display: inline-block;
-}
-
-.nav-tip-red {
-    color: #d00000 !important; /* 'Tip' 부분만 빨간색 */
-}
-
-.nav-tip a:hover {
-    transform: scale(1.05) translateY(-2px);
-    opacity: 0.8;
 }
 
 
