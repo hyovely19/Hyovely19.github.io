@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>부동산 사기 방지 팁 | 효블리</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .manual-section {
+            padding: 100px 0;
+            background-color: var(--bg-white);
+        }
+
+        .manual-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .manual-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .manual-header h2 {
+            font-size: 2.5rem;
+            color: #d00000;
+            margin-bottom: 10px;
+        }
+
+        .manual-header p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+        }
+
+        .manual-card {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            margin-bottom: 40px;
+            border-left: 6px solid #d00000;
+        }
+
+        .manual-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--primary-color);
+        }
+
+        .manual-card h3 i {
+            color: #d00000;
+        }
+
+        .manual-card p {
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+            color: var(--text-main);
+        }
+
+        .manual-list {
+            list-style: none;
+        }
+
+        .manual-list li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 12px;
+            font-size: 1.05rem;
+        }
+
+        .manual-list li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #d00000;
+            font-weight: bold;
+        }
+
+        .red-flag {
+            background-color: #fff5f5;
+            border: 1px solid #feb2b2;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .checklist-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: var(--bg-light);
+            border-radius: 10px;
+        }
+
+        .checklist-item i {
+            color: #d00000;
+            font-size: 1.2rem;
+            margin-top: 3px;
+        }
+
+        .btn-back {
+            display: block;
+            width: fit-content;
+            margin: 40px auto 0;
+            padding: 12px 30px;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .btn-back:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-2px);
+        }
+
+        .highlight-text {
+            font-weight: 700;
+            color: #d00000;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 내비게이션 바 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo"><a href="index.html"><i class="fa-solid fa-scale-balanced"></i> 단호한 효블리</a></h1>
+            <ul class="nav-links">
+                <li><a href="index.html">홈</a></li>
+                <li class="nav-now"><a href="https://hyovely19.github.io/Hyo_Se_Bu.github.io/">세종 부동산 NOW</a></li>
+                <li class="nav-tip"><a href="fraud_tips.html">부동산피해방지 <span class="nav-tip-red">Tip</span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="manual-section">
+        <div class="manual-container">
+            <div class="manual-header fade-in">
+                <h2>부동산 사기 피해 방지 가이드</h2>
+                <p>기획부동산 사기, 아는 만큼 피할 수 있습니다.</p>
+            </div>
+
+            <!-- 1. 기혹부동산의 정의 -->
+            <div class="manual-card fade-in">
+                <h3><i class="fa-solid fa-circle-info"></i> 1. 기획부동산의 정의</h3>
+                <p>
+                    기획부동산은 일반적으로 개발이 불가능하거나 가치가 현저히 낮은 토지를 저가에 매입한 후, 
+                    <span class="highlight-text">허위·과장된 개발 정보를 유포</span>하여 다수의 수분양자에게 고가에 
+                    분할 판매하는 업체 또는 그 행위를 일컫습니다.
+                </p>
+                <p>
+                    법률상 정의된 용어는 아니지만, 부동산 시장의 공정성을 해치는 대표적인 기망 행위로 분류됩니다.
+                </p>
+            </div>
+
+            <!-- 2. 조직 구성 -->
+            <div class="manual-card fade-in">
+                <h3><i class="fa-solid fa-users-viewfinder"></i> 2. 조직 구성 및 활동 체계</h3>
+                <p>기획부동산은 단순한 중개업소가 아닌, 철저하게 분업화된 <strong>'기업형 조직'</strong>의 형태를 띱니다.</p>
+                <ul class="manual-list">
+                    <li><strong>총책(회장/사장):</strong> 전체 사업 기획 및 토지 매입 결정.</li>
+                    <li><strong>영업 부서(팀장/실장):</strong> 지인 영업 및 텔레마케팅 총괄. 주로 '부동산 컨설팅', '투자' 또는 '개발'회사 등의 명칭을 사용합니다.</li>
+                    <li><strong>관리 부서:</strong> 계약서 작성 및 자금 관리.</li>
+                    <li><strong>활동 특성:</strong> 단기간에 법인을 설립하여 영업 후, 수익이 발생하면 법인을 폐업하고 소재지를 옮기는 '떴다방'식 운영이 일반적입니다.</li>
+                </ul>
+            </div>
+
+            <!-- 3. 주요 수법 -->
+            <div class="manual-card fade-in">
+                <h3><i class="fa-solid fa-mask"></i> 3. 기망 방법 및 주요 수법</h3>
+                <p>기획부동산은 심리적 압박과 정보의 비대칭성을 교묘히 이용합니다.</p>
+                <ul class="manual-list">
+                    <li><strong>지인 기반 영업(다단계 방식):</strong> 취업을 미끼로 주부나 은퇴자를 채용하여 본인 또는 지인에게 땅을 사게 하는 방식을 취합니다.</li>
+                    <li><strong>공유지분 분할 판매:</strong> 개발이 불가능한 큰 땅을 수십~수백 명의 지분으로 쪼개어 판매합니다. (나중에 처분이 매우 어렵습니다.)</li>
+                    <li><strong>허위 개발 호재 유포:</strong> "정부의 미공개 정보", "곧 용도 변경 확정" 등 확인되지 않은 정보를 마치 확정된 사실인 양 기망합니다.</li>
+                    <li><strong>압박 면접형 계약:</strong> "오늘 아니면 기회가 없다", "입금순으로 마감된다"며 현장 확인 전 가계약금 입금을 종용합니다.</li>
+                </ul>
+            </div>
+
+            <!-- 4. 사기 의심 징후 -->
+            <div class="manual-card fade-in">
+                <h3><i class="fa-solid fa-triangle-exclamation"></i> 4. 사기 의심 징후 (Red Flags)</h3>
+                <p>다음 중 하나라도 해당한다면 기획부동산 사기를 의심해야 합니다.</p>
+                <div class="red-flag">
+                    <ul class="manual-list">
+                        <li><strong>공유지분 등기:</strong> 개별 등기가 아닌 수십 명의 공유지분으로 판매하는 경우.</li>
+                        <li><strong>규제 지역 토지:</strong> 개발제한구역(그린벨트), 비도시지역 산지 등 개발 가능성이 희박한 토지.</li>
+                        <li><strong>현장 확인 거부:</strong> 로드뷰나 사진으로만 설명하며 실제 현장 방문을 교묘히 회피하는 경우.</li>
+                        <li><strong>지인 마케팅:</strong> 오랜만에 연락 온 지인이 "좋은 투자처가 있다"며 접근하는 경우.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 5. 피해 방지 체크리스트 -->
+            <div class="manual-card fade-in">
+                <h3><i class="fa-solid fa-clipboard-check"></i> 5. 피해 방지 체크리스트 (실무 팁)</h3>
+                <p>계약 전 반드시 본인이 직접 확인해야 할 사항입니다.</p>
+                
+                <div class="checklist-item">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <div>
+                        <strong>토지이용계획확인서 확인</strong>
+                        <p>토지이음 사이트에서 해당 지번의 용도와 규제 사항(개발제한구역 등)을 직접 확인하십시오.</p>
+                    </div>
+                </div>
+
+                <div class="checklist-item">
+                    <i class="fa-solid fa-file-contract"></i>
+                    <div>
+                        <strong>지분 구조 확인</strong>
+                        <p>등기부등본을 발급받아 소유주가 지나치게 많지는 않은지 확인하십시오.</p>
+                    </div>
+                </div>
+
+                <div class="checklist-item">
+                    <i class="fa-solid fa-street-view"></i>
+                    <div>
+                        <strong>현장 방문 필수</strong>
+                        <p>인근 중개업소를 방문하여 실제 시세와 개발 가능성을 재확인하십시오.</p>
+                    </div>
+                </div>
+
+                <div class="checklist-item">
+                    <i class="fa-solid fa-building-circle-check"></i>
+                    <div>
+                        <strong>업체 정보 확인</strong>
+                        <p>국가브이월드나 지자체 홈페이지를 통해 정식 등록된 공인중개사사무소인지 확인하십시오.</p>
+                    </div>
+                </div>
+            </div>
+
+            <a href="index.html" class="btn-back"><i class="fa-solid fa-house"></i> 메인으로 돌아가기</a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 효블리. 신뢰와 원칙의 주무관.</p>
+        <p>본 가이드는 공익 목적으로 작성되었습니다.</p>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-in').forEach(element => {
+            observer.observe(element);
+        });
+    </script>
+</body>
+
+</html>

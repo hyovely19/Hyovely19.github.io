@@ -109,29 +109,27 @@ a {
     text-shadow: 1px 1px 0px #fff, 3px 3px 5px rgba(0,0,0,0.25);
 }
 
-/* 부동산사기방지 tip 전용 스타일 */
+/* 부동산피해방지 Tip 전용 스타일 */
 .nav-tip {
     display: inline-block;
-    transform: rotate(-15deg); /* 우측 꼬리가 위로 향하도록 변경 (-15도) */
     margin-left: 10px;
 }
 
 .nav-tip a {
-    font-weight: 500; /* 글씨가 뭉치지 않도록 굵기 조정 */
-    font-size: 1.1rem;
-    color: #d00000 !important; /* 더 선명한 빨간색 계열 */
-    /* 가독성을 고려하여 입체감을 더 얇고 날카롭게 조정 */
-    text-shadow: 
-        1px 1px 0px rgba(0,0,0,0.1),
-        1px 1px 2px rgba(0,0,0,0.2);
+    font-weight: 800; /* 'NOW'와 동일하게 두껍게 */
+    font-size: 1.15rem; /* 'NOW'와 동일한 크기 */
+    color: var(--text-main) !important; /* 기본 네비게이션 컬러 */
     transition: all 0.2s ease;
     display: inline-block;
 }
 
+.nav-tip-red {
+    color: #d00000 !important; /* 'Tip' 부분만 빨간색 */
+}
+
 .nav-tip a:hover {
-    color: #ff0000 !important; /* 호버 시 밝은 빨간색 */
     transform: scale(1.05) translateY(-2px);
-    text-shadow: 1px 2px 4px rgba(0,0,0,0.3);
+    opacity: 0.8;
 }
 
 
