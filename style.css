@@ -65,24 +65,24 @@ a {
 }
 
 .nav-container {
-    max-width: 1150px; /* 로고와 메뉴 간의 거리를 더 확보하기 위해 너비 확장 */
+    max-width: 1350px; /* 로고와 전체 메뉴 그룹 사이의 영역을 더 크게 확보 */
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 18px 25px; /* 상하좌우 여백을 약간 더 벌림 */
+    padding: 18px 25px;
 }
 
 .logo {
-    font-size: 1.6rem; /* 로고 크기를 아주 살짝 키움 */
+    font-size: 1.6rem;
     color: var(--primary-color);
-    letter-spacing: 1.5px; /* 글자 간격 미세 조정 */
+    letter-spacing: 1.5px;
 }
 
 .nav-links {
     list-style: none; /* 목록 기호(점) 제거 */
     display: flex;
-    gap: 35px; /* 메뉴 간의 간격을 20px에서 35px로 대폭 넓힘 */
+    gap: 20px; /* 개별 메뉴들 사이의 간격은 다시 촘촘하게 복구 */
 }
 
 .nav-links a {
