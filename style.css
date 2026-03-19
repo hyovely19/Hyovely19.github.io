@@ -109,6 +109,36 @@ a {
     text-shadow: 1px 1px 0px #fff, 3px 3px 5px rgba(0,0,0,0.25);
 }
 
+/* 부동산사기방지 tip 전용 스타일 */
+.nav-tip {
+    display: inline-block;
+    transform: rotate(15deg); /* 우측으로 15도 기울임 */
+    margin-left: 10px;
+}
+
+.nav-tip a {
+    font-weight: 900;
+    font-size: 1.1rem;
+    color: #ff4500 !important; /* 레드톤 주황 */
+    /* 다층 그림자로 입체감(3D) 구현 */
+    text-shadow: 
+        1px 1px 0px #d35400,
+        2px 2px 0px #d35400,
+        3px 3px 0px #d35400,
+        4px 4px 5px rgba(0,0,0,0.3);
+    transition: all 0.2s ease;
+    display: inline-block;
+}
+
+.nav-tip a:hover {
+    color: #ff6347 !important; /* 호버 시 약간 밝아짐 */
+    transform: scale(1.1) translateY(-2px); /* 호버 시 튀어나오는 느낌 */
+    text-shadow: 
+        1px 1px 0px #e67e22,
+        2px 2px 0px #e67e22,
+        4px 4px 8px rgba(0,0,0,0.4);
+}
+
 
 /* 히어로 섹션 (첫 화면) */
 .hero-section {
