@@ -105,6 +105,11 @@ a {
     display: inline-block;
 }
 
+.nav-tip-red {
+    color: #d00000 !important; /* 'Tip'만 강렬한 빨간색으로 강조 */
+    text-shadow: none; /* 빨간색은 입체감보다 선명도가 중요하므로 그림자 제거 */
+}
+
 .nav-now a:hover, .nav-tip a:hover {
     transform: scale(1.05); /* 살짝 커지는 효과 */
     text-shadow: 1px 1px 0px #fff, 3px 3px 5px rgba(0,0,0,0.25);
