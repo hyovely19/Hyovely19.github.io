@@ -129,7 +129,7 @@ a {
 
 .hero-subtitle {
     font-size: 1.2rem;
-    color: var(--text-muted);
+    color: var(--text-main);
     margin-bottom: 40px;
     max-width: 600px;
     margin-left: auto;
